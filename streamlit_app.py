@@ -10,6 +10,6 @@ st.dataframe(data)
 
 data['gastos_fixos'] = data['agua'] + data['luz'] + data['gás'] + data['internet'] + data['aluguel'] + data['condominio']
 data['gastos_variaveis'] = data['cartao_credito']
-data['sobra_mes'] = data['gastos_fixos'] + data['gastos_variaveis'] - data['salario']
+data['sobra_mes'] = data['salario'] - data['gastos_fixos'] + data['gastos_variaveis']
 
 st.dataframe(data[['gastos_fixos', 'gastos_variaveis', 'salario', 'sobra_mes']])
