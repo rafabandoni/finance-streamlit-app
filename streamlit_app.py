@@ -19,4 +19,4 @@ st.dataframe(data[['gastos_fixos', 'gastos_variaveis', 'salario', 'sobra_mes']])
 
 poupanca = data['sobra_mes'].sum()
 
-st.write('O valor que você tem na poupança deveria ser de:', poupanca)
+st.write('O valor que você tem na poupança deveria ser de:', poupanca.round(2))
